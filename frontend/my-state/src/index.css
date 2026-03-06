@@ -1,0 +1,67 @@
+/* ============================= */
+/*  Home State Global Styling    */
+/*  Full Width + Dark Theme Fix  */
+/* ============================= */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* ✅ Dark theme default */
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #070708;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ✅ Remove default link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ✅ Body full width fix (MOST IMPORTANT) */
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-height: 100vh;
+
+  /* ✅ NO flex center (this was the issue) */
+  display: block;
+
+  background: #070708;
+}
+
+/* ✅ Root must take full width */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ✅ Buttons default reset */
+button {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* ✅ Scrollbar optional luxury look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 215, 0, 0.25);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+}
